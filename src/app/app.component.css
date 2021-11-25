@@ -1,5 +1,28 @@
-table{
-    border: 1px solid black;
+p{
+   text-align: center;
+}
+
+#inner{
+    display: inline-block;
+}
+
+
+#square{
     width: 300px;
     height: 300px;
+    display: inline-block;
+    margin: 3px;
+    
+    
+    
+    
+}
+
+#bar{
+    height: 25px;
+    background-color: cornflowerblue;
+    position: relative;
+    top: 275px;
+    
+    
 }

@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
 
-  <h1>Alejo Tobar va a trabajar en Intango pronto </h1>
-  <app-squares></app-squares>
-  <p>My grade is {{x}}</p>
-  <p>the date is {{theDate|date:'yyyy-mm-dd'}}</p>
-  <input type="button" [value]="buttonVal" (click)="changeText()">
-  <p></p>
-  <button (click)=nameChange($event)>no joda</button>
+    <p>Favorite Colors</p>
 
-  <table [style]="color">
+    <p></p>
+
+    <!-- <div (click)="votar2($event)" *ngFor = "let votes of votacion" id="square" style="background-color:{{votes.color}}">
+        <div id="bar"></div>
+    </div> -->
+
+    <div *ngFor="let votes of votacion" id="inner" >
+        <div (click)="votar2(votes)" id="square" style="background-color:{{votes.color}}">
+            
+            
+        </div>
+    </div>
+
+
     
-  </table>
-  
-  
 </body>
+
 </html>
