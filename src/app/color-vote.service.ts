@@ -16,7 +16,16 @@ export class ColorVoteService {
     let theHeaders = new HttpHeaders();
     const options = {headers: theHeaders};
 
-    return this.httpClient.get<ColorVote[]>("http://localhost:8080/squares/get-votes",options);
+    return this.httpClient.get<ColorVote[]>("http://localhost:8080/squares/get-votes", options);
+
+  }
+
+  public VoteFor(id:number){
+
+    let theHeaders = new HttpHeaders();
+    const options = {headers: theHeaders};
+
+    return this.httpClient.post("http://localhost:8080/squares/vote/" + id, options);
 
   }
 

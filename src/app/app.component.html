@@ -14,19 +14,15 @@
 
     <p></p>
 
-    <!-- <div (click)="votar2($event)" *ngFor = "let votes of votacion" id="square" style="background-color:{{votes.color}}">
-        <div id="bar"></div>
-    </div> -->
-
-    <div *ngFor="let votes of votacion" id="inner" >
+    <div *ngFor="let votes of votacion" id="outer" >
         <div (click)="votar2(votes)" id="square" style="background-color:{{votes.color}}">
-            
+            <div id="inner" style="width:{{longi}}">{{wid}}</div>
             
         </div>
     </div>
 
-
     
+  
 </body>
 
 </html>

@@ -2,8 +2,15 @@ p{
    text-align: center;
 }
 
-#inner{
+#outer{
     display: inline-block;
+}
+
+#inner{
+    height: 25px;
+    background-color: cornflowerblue;
+    top: 275px;
+    position: relative;
 }
 
 
@@ -18,11 +25,3 @@ p{
     
 }
 
-#bar{
-    height: 25px;
-    background-color: cornflowerblue;
-    position: relative;
-    top: 275px;
-    
-    
-}
